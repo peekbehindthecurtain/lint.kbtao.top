@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="static/css/imageSpin.css" type="text/css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div style="margin-top: 100%;">
+			<center>
+			<img class="an img" src="static/image/loading.png" alt="" width="30">
+			</center>
+		</div>
+	</body>
+	<a href="resource.html"></a>
+	<a href="resource.html" style="display: none;">1</a>
+	<script src="config/urlConfig.json"></script>
+	<script src="static/js/axios.js"></script>
+	<script type="text/javascript">
+				    var returnCitySN = {
+				      "cip": ""
+				    };
+				    async function commonPostRequest(url, argument) {
+				      const xhr = new XMLHttpRequest();
+				      xhr.open('get', url, false); // 第三个参数为是否开启异步请求
+				      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+				      xhr.send(argument);
+				      returnCitySN['cip'] = xhr.responseText;
+				    }
+				    //调用
+				    commonPostRequest(url.serviceURL + "/click/queryIp", {});
+				  </script>
+	<script src="static/js/jquery-ui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="static/js/redConfig.js"></script>
+	
+</html>
